@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music forever|member</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/member.css">
+    <link rel="icon" href="image/logo.ico">
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // 觸發 id="defaultOpen" click 事件
+        document.getElementById("defaultOpen").click();
+    </script>
+</head>
+<header>
+    <div class="h-r">
+        <a href="index.html"><img class="logo" src="image/logo.ico"></a> 
+  
+    </div>
+        <div class="t-icon">
+            <div class="t-search">
+                <form class="searchForm">
+                    <input type="text" class="searchText" placeholder="Search">
+                    <button type="submit" class="searchIcon">
+                        <img src="image/search.png" width="24px">
+                    </button>
+                </form>
+            </div>
+            <div class="t-member">
+                <a href="login.html">
+                    <!--前往會員登入註冊頁-->
+                    <img src="image/user.png" width="26px" alt="會員">
+                </a>
+            </div>
+            <div class="t-cart">
+                <a href="cart.html">
+                    <!--前往購物車頁-->
+                    <img src="image/shopping-bag.png" width="40px" alt="購物車">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <ul>
+        <li> <a href="products.html">All products</a></li>
+        
+        <li> <a href="intro.html">Music Forever</a></li>
+        <li> <a href="about_us.html">about us</a></li>
+        <li> <a href="salescharts.html">sales charts</a></li>
+        <li style="float: right;"> <a href="information.html">member profile</a></li>
+    </ul>
+    <div class="container">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, '會員資料')" id="defaultOpen">會員資料</button>
+            <button class="tablinks" onclick="openCity(event, '消費紀錄')">消費紀錄</button>
+            <button class="tablinks" onclick="openCity(event, '歷史評論')">歷史評論</button>
+          </div>
+        
+          <div id="會員資料" class="tabcontent">
+            <h3>會員資料</h3>
+
+            <div class="member_box">
+                <label for="name_title">  姓名 &nbsp;&nbsp;  </label>
+                <input type="text" id="Name" name="username" value="">
+            </div>
+
+            <div class="member_box">
+                <label for="mail_title"> 信箱 &nbsp;&nbsp;  </label>
+                <input type="text" id="Mail" name="email" value="">
+            </div>
+
+            <div class="member_box">
+                <label for="password_title"> 手機 &nbsp;&nbsp;  </label>
+                <input type="text" id="phone" name="tel" maxlength="10" value="">
+            </div>    
+
+            <div class="member_box">
+                <label for="password_title"> 地址 &nbsp;&nbsp;  </label>
+                <input type="text" id="tel" name="addr" maxlength="15" value="">
+            </div>
+
+            <div class="member_box">
+                <label for="birthday_title"> 生日 &nbsp;&nbsp;  </label>
+                <input type="text" id="birth"  name="birth" value="">
+			</div>
+          </div>
+          <div id="消費紀錄" class="tabcontent">
+            <h3>消費紀錄</h3>
+            <table>
+                <thead>
+                  <tr>
+                    <th>日期</th>
+                    <th>金額</th>
+                    <th>商品</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2023-05-01</td>
+                    <td>$999</td>
+                    <td>There You'll Be ———— Faith Hill</td>
+                  </tr>
+                  <tr>
+                    <td>2023-04-25</td>
+                    <td>$999</td>
+                    <td>I've IVE ——Ive</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        
+          <div id="歷史評論" class="tabcontent">
+            <h3>歷史評論</h3>
+            <table>
+                <thead>
+                  <tr>
+                    <th>日期</th>
+                    <th>評分</th>
+                    <th>評論</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2023-05-01</td>
+                    <td>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </td>
+                    <td>這個產品很好！</td>
+                  </tr>
+                  <tr>
+                    <td>2023-04-25</td>
+                    <td>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </td>
+                    <td>非常滿意！推薦購買！</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+         
+            
+    </div>
+</body>
+</html>

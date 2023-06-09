@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品介紹</title>
+    <link rel="stylesheet" href="index copy.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="css/products1.css">
+    <link rel="icon" href="image/logo.ico">
+    <script>
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById("quantity");
+          var currentQuantity = parseInt(quantityInput.value);
+    
+          if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+          }
+        }
+    
+        function increaseQuantity() {
+          var quantityInput = document.getElementById("quantity");
+          var currentQuantity = parseInt(quantityInput.value);
+          quantityInput.value = currentQuantity + 1;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+      const stars = document.querySelectorAll('.star');
+      const submitBtn = document.getElementById('submitBtn');
+      const resultDiv = document.getElementById('result');
+
+      stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+          updateStars(index);
+        });
+      });
+
+      submitBtn.addEventListener('click', () => {
+        const rating = getSelectedRating();
+        if (rating === 0) {
+          alert('請選擇評分');
+        } else {
+          // 在此处执行将评分提交到服务器的操作
+          resultDiv.textContent = '評分已提交：' + rating + '顆星';
+          resetStars();
+        }
+      });
+
+      function updateStars(selectedIndex) {
+        stars.forEach((star, index) => {
+          if (index <= selectedIndex) {
+            star.classList.add('active');
+          } else {
+            star.classList.remove('active');
+          }
+        });
+      }
+
+      function getSelectedRating() {
+        const activeStars = document.querySelectorAll('.star-rating .star.active');
+        return activeStars.length;
+      }
+
+      function resetStars() {
+        stars.forEach(star => {
+          star.classList.remove('active');
+        });
+      }
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // 阻止表单默认提交行为
+
+        var commentInput = document.getElementById("commentInput");
+        var commentText = commentInput.value;
+
+        if (commentText.trim() !== "") {
+          addComment(commentText);
+          commentInput.value = "";
+        }
+      });
+
+      function addComment(text) {
+        var commentContainer = document.createElement("div");
+        commentContainer.classList.add("comment-container");
+
+        var comment = document.createElement("div");
+        comment.classList.add("comment");
+        var commentText = document.createElement("p");
+        commentText.textContent = text;
+        comment.appendChild(commentText);
+
+        commentContainer.appendChild(comment);
+
+        var commentsDiv = document.getElementById("comments");
+        commentsDiv.appendChild(commentContainer);
+        comment.style.backgroundColor = "transparent";
+      }
+    });
+      </script>
+</head>
+<script src="header.html"></script>
+<header>
+  <div class="h-r">
+      <a href="index.html"><img class="logo" src="image/logo.ico"></a> 
+
+  </div>
+      <div class="t-icon">
+          <div class="t-search">
+              <form class="searchForm">
+                  <input type="text" class="searchText" placeholder="Search">
+                  <button type="submit" class="searchIcon">
+                      <img src="image/search.png" width="24px">
+                  </button>
+              </form>
+          </div>
+          <div class="t-member">
+              <a href="login.html">
+                  <!--前往會員登入註冊頁-->
+                  <img src="image/user.png" width="26px" alt="會員">
+              </a>
+          </div>
+          <div class="t-cart">
+              <a href="cart.html">
+                  <!--前往購物車頁-->
+                  <img src="image/shopping-bag.png" width="40px" alt="購物車">
+              </a>
+          </div>
+      </div>
+  </div>
+</header>
+<body>
+    <ul>
+        <li> <a href="products.html">All products</a></li>
+        <li> <a href="intro.html">Music Forever</a></li>
+        <li> <a href="about_us.html">about us</a></li>
+        <li> <a href="salescharts.html">sales charts</a></li>
+        <li style="float: right;"> <a href="information.html">member profile</a></li>
+    </ul>
+    <h4>商品介紹&nbsp /&nbsp 唱片</h4>
+    <div class="container">
+        <div class="image">
+            <img class="product1" src="image/product4.jpg" alt="product1">
+        </div>
+        
+        <div class="text11">
+            <div class="text123">
+                <h2>More Than I Can Say ——Leo Sayer</h2>            
+                <a href="https://open.spotify.com/track/17M1JFSr2eEvo5dQnCIQimF">
+                        <img src="image/spotify.png" width="26px" alt="spotify">
+                </a>
+                <a href="https://music.youtube.com/watch?v=s-W5NlMlQco">
+                    <img src="image/youtube.png" width="26px" alt="yt">
+                </a>
+            </div>
+        <h3>$999</h3>
+          <p>60年代初期在台灣紅到不行，無論是大人小孩，就算不知歌詞，都可以來上一句「喔喔耶耶」。</p>
+
+          <div class="text22">
+            <nobr> 
+                <div class="text221"> 
+                    購買人數:999
+                 
+                </div>
+                <div class="text222"> 
+                    銷售數量:999
+                 
+                </div>
+               
+            </nobr>
+          </div>
+            
+           <div class="shopline">
+                <button onclick="decreaseQuantity()"class="button3">-</button>
+                <input type="number" id="quantity" value="0" min="0" readonly class="input1">
+                <button onclick="increaseQuantity()"class="button4">+</button><br>
+            
+            
+            </div><br>
+
+            <a class="button5" href="#">加入購物車</a>
+            <a class="button6" href="cart.html">直接購買</a>
+
+
+        </div>
+    </div>
+    <div class="txt">
+        <p>More Than I Can Say ——Leo Sayer</p>
+        <div class="txt133">
+        
+          <div class="star-rating">
+              <span class="star">&#9734;</span>
+              <span class="star">&#9734;</span>
+              <span class="star">&#9734;</span>
+              <span class="star">&#9734;</span>
+              <span class="star">&#9734;</span>
+          </div>
+      
+          <button class="submitBtn" id="submitBtn">提交評分</button>
+  
+          <div class="ans" id="result"></div><br>
+
+          <div id="comments"></div>
+            <form id="commentForm">
+            <textarea id="commentInput" placeholder="在這裡輸入留言" rows="4"></textarea>
+            <button class="commentsub" type="submit">提交</button>
+            </form>
+          </div>
+    </div>
+    <div class="txt1">
+        <br>歌手:譯自英文-杰拉德·休（Gerard Hugh）“李歐”·賽耶（Gerard Hugh“ Leo” Sayer）<p>是一位英裔澳大利亞歌手和作曲家，自1973年起便一直活躍。
+        <div class="txt3">
+            <p>發行日期:1971</p>
+        </div>
+    </div>
+    <video autoplay muted loop>
+            <source src="video/775.mp4">
+    </video>
+    <div class="instructions">
+        注意:
+        <p>請您於收到商品一星期內，詳細檢查商品，Music Forever音樂網銷售的所有商品均提供品質保證，</p>
+        <p>若您收到的商品有瑕疵或損壞或遞送途中因不慎疏失造成商品毀損的情形發生欲辦理退換貨時，請勿拆封並且保持商品完整包裝，依下列退換貨準則辦理：</p>
+        <p>1. 因唱片大部份商品皆為不可退貨，客戶在下單時請審慎評估您所需求的數量，請您於收到商品後詳細檢商品，若您收到商品有瑕疵損壞，欲辦理退換貨時，請勿拆封並且保持商品完整包裝。</p>
+        <p>2. 退換貨時請將退換商品及退貨明細單一併寄回，本公司收到貨時時進行驗收，驗收無誤後，本次退貨金額將直接轉入您的個人帳號內，在您下次訂貨時會從您帳號餘額扣除。</p>
+        <p>＊訂購後倘任意大量退/換貨，因已造成Music Forever音樂網作業上之困擾與損害，Music Forever音樂網可視情況採取拒絕交易或永久取消其會員資格辦理。</p>
+    </div>
+          
+ 
+</body>
+</html>
