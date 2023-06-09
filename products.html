@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music forever | All products</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="icon" href="image/logo.ico">
+
+</head>
+<script src="header.html"></script>
+<header>
+  <div class="h-r">
+      <a href="index.html"><img class="logo" src="image/logo.ico"></a> 
+
+  </div>
+      <div class="t-icon">
+          <div class="t-search">
+              <form class="searchForm">
+                  <input type="text" class="searchText" placeholder="Search">
+                  <button type="submit" class="searchIcon">
+                      <img src="image/search.png" width="24px">
+                  </button>
+              </form>
+          </div>
+          <div class="t-member">
+               <a href="login.html">
+                  <!--前往會員登入註冊頁-->
+                  <img src="image/user.png" width="26px" alt="會員">
+              </a>
+          </div>
+          <div class="t-cart">
+              <a href="cart.html">
+                  <!--前往購物車頁-->
+                  <img src="image/shopping-bag.png" width="40px" alt="購物車">
+              </a>
+          </div>
+      </div>
+  </div>
+</header>
+<body>
+
+    <ul>
+        <li> <a href="products.html">All products</a></li>
+        
+        <li> <a href="intro.html">Music Forever</a></li>
+        <li> <a href="about_us.html">about us</a></li>
+        <li> <a href="salescharts.html">sales charts</a></li>
+        <li style="float: right;"> <a href="information.html">member profile</a></li>
+    </ul>
+    <div id="pic" style="OVERFLOW: hidden; width:1024" class="tt">
+        <table width="100%" cellpadding=0  cellspace=0>
+        <tr>
+        <td id="pic1">
+        <table>
+        <tr style="border:1px solid white">
+        <td><a rel="nofollow" href="products1.html" ><img src="image/product1.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="products2.html" ><img src="image/product2.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product3.html" ><img src="image/product3.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product4.html" ><img src="image/product4.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product5.html" ><img src="image/product5.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product6.html" ><img src="image/product6.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product7.html" ><img src="image/product7.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product8.html" ><img src="image/product8.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product9.html" ><img src="image/product9.jpg" height="150" border=0></td>
+        </tr>
+        </table>
+        </td>
+        <td id="pic2"></td>
+        </tr>
+        <script>
+            var speed=100;
+            pic2.innerHTML=pic1.innerHTML
+            pic.scrollLeft=pic.scrollWidth
+            function Marquee(){
+            if(pic.scrollLeft<=0)
+            pic.scrollLeft+=pic2.offsetWidth
+            else{
+            pic.scrollLeft--
+            }
+            }
+            var MyMar=setInterval(Marquee,speed)
+            pic.onmouseover=function() {clearInterval(MyMar)}
+            pic.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+        </script>
+        </table>
+        </div>
+
+
+
+        <div class="titleup">Vintage and nostalgic</div>
+
+                <ul class="product-list">
+                    <li class="product-item">
+                      <a href="products1.html"><img src="image/product1.jpg" alt="Product 1"></a>
+                      <h3 class="title">There You'll Be ———— Faith Hill</h3>
+                      <p class="price">$19.99</p>
+                      <a class="product-button1" href="#">加入購物車</a>
+                      <a class="product-button2" href="cart.html">直接購買</a>
+
+                    </li>
+                    <li class="product-item">
+                        <a href="products2.html"><img src="image/product2.jpg" alt="Product 1"></a>
+                      <h3 class="title">Am I Easy To Forget ——Jim Reeves</h3>
+                      <p class="price">$29.99</p>
+                      <a class="product-button1" href="#">加入購物車</a>
+                      <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product3.html"><img src="image/product3.jpg" alt="Product 1"></a>
+                        <h3 class="title">My Heart Will Go On ——Céline Dion</h3>
+                        <p class="price">$19.99</p>
+                        <a class="product-button1" href="#">加入購物車</a>
+                        <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product4.html"><img src="image/product4.jpg" alt="Product 1"></a>
+                        <h3 class="title">More Than I Can Say ——Leo Sayer</h3>
+                        <p class="price">$19.99</p>
+                        <a class="product-button1" href="#">加入購物車</a>
+                        <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product5.html"><img src="image/product5.jpg" alt="Product 1"></a>
+                        <h3 class="title">Yesterday Once More —TheCarpenters</h3>
+                        <p class="price">$19.99</p>
+                        <a class="product-button1" href="#">加入購物車</a>
+                        <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product6.html"><img src="image/product6.jpg" alt="Product 1"></a>
+                        <h3 class="title">Right Here Waiting ——Richard Marx</h3>
+                        <p class="price">$19.99</p>
+                        <a class="product-button1" href="#">加入購物車</a>
+                        <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product7.html"><img src="image/product7.jpg" alt="Product 1"></a>
+                      <h3 class="title">Me ——Jisoo</h3>
+                      <p class="price">$29.99</p>
+                      <a class="product-button1" href="#">加入購物車</a>
+                      <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product8.html"><img src="image/product8.jpg" alt="Product 1"></a>
+                      <h3 class="title">I've IVE ——Ive</h3>
+                      <p class="price">$29.99</p>
+                      <a class="product-button1" href="#">加入購物車</a>
+                      <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+                    <li class="product-item">
+                        <a href="product9.html"><img src="image/product9.jpg" alt="Product 1"></a>
+                      <h3 class="title">OMG ——NewJeans</h3>
+                      <p class="price">$29.99</p>
+                      <a class="product-button1" href="#">加入購物車</a>
+                      <a class="product-button2" href="cart.html">直接購買</a>
+                    </li>
+  
+
+                  </ul>
+                <!-- <a href="products1.html"><img class="cd" src="image/product1.jpg" /></a>
+                <h2>There You'll Be ———— Faith Hill</h2>
+                <p>
+                    《珍珠港》以古典浪漫氣質樂音為核心，從柔情似水的鋼琴音調里緩緩的帶出悲壯悠揚的古典弦樂。
+                </p>
+                <br><a href="https://open.spotify.com/track/5t2gSYVvBV9kH4t7Czertq">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=pJSjXZdKj8s">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product2.jpg" />
+                <h2>Am I Easy To Forget ——Jim Reeves</h2>
+                <p>
+                    羅馬假日主題曲，一段永難忘懷的愉快經歷，一段感動人心的愛情故事。
+                </p>
+                <br><a href="https://open.spotify.com/track/4OA7RWNNkwmY0HhodhVBd4">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=XAB66TsKhVY">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product3.jpg" />
+                <h2>My Heart Will Go On ——Céline Dion</h2>
+                <p>
+                    是1997年的賣座電影《鐵達尼號》的主題曲。歌曲在世界各地排行第一。《My Heart Will Go On》成為了狄翁最暢銷的單曲，以及有史以來最暢銷的單曲之一，並且是1998年全年世界上最暢銷的單曲。
+                </p>
+                <br><a href="https://open.spotify.com/track/7F1yVPuJ4xRdrDvf8OL0HF">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=9bFHsd3o1w0">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product4.jpg" />
+                <h2>More Than I Can Say ——Leo Sayer</h2>
+                <p>
+                    60年代初期在台灣紅到不行，無論是大人小孩，就算不知歌詞，都可以來上一句「喔喔耶耶」。
+                </p>
+                <br><a href="https://open.spotify.com/track/17M1JFSr2eEvo5dQnCIQim">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=s-W5NlMlQco">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product5.jpg" />
+                <h2>Yesterday Once More —TheCarpenters</h2>
+                <p>
+                    這首年輕時就經常朗朗上口的歌，有一個失戀療傷的背景故事，描寫一個愛聽歌的女孩，藉著喜愛的老歌得到情傷的救贖。
+                </p>
+                <br><a href="https://open.spotify.com/track/3wM6RTAnF7IQpMFd7b9ZcL">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=wawbhXQX2TQ">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product6.jpg" />
+                <h2>Right Here Waiting ——Richard Marx</h2>
+                <p>
+                    最膾炙人口、紅遍全球的抒情創作「Right Here Waiting」更是讓人百聽不厭。優美的旋律，加上 Richard Marx 沙啞的嗓音，把浪漫深情的境界帶到令人感動的境界。
+                </p>
+                <br><a href="https://open.spotify.com/track/4LFwNJWoj74Yd71fIr1W8x">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=S_E2EHVxNAE">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+        </main>
+        <div class="title">Popular Albums</div>
+        <main>
+            <section class="card">
+                <img class="cd" src="image/product7.jpg" />
+                <h2>Me ——Jisoo</h2>
+                <p>
+                    《ME》是韓國女子組合BLACKPINK的成員Jisoo的首張個人單曲專輯，於3月6日開放預購，並由YG娛樂在2023年3月31日發行。主打曲為〈꽃(FLOWER)〉。
+                    專輯預售量在發表前就獲得100萬預售，為Kpop女團Solo史上最高的數位。
+                </p>
+                <br><a href="https://open.spotify.com/album/2xvV55nQYyhozbXtbqwPql">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_kzqkkhwi_8l5pnRw_a7W13nN7pbS3306w">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product8.jpg" />
+                <h2>I've IVE ——Ive</h2>
+                <p>
+                    《I've IVE》是韓國女子團體IVE的首張韓語正規專輯，由STARSHIP娛樂製作並於2023年4月10日發行，主打曲為〈Kitsch〉及〈I AM〉。
+                </p>
+                <br><a href="https://open.spotify.com/album/38VzP4yWfHdHafITKKRHEB">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_klb1BRW7XHYSvBT3uhZy84dW40wgnpegY">
+                    <button>YouTube music</button>
+                    </a>
+            </section>
+            <section class="card">
+                <img class="cd" src="image/product9.jpg" />
+                <h2>OMG ——NewJeans </h2>
+                <p>
+                    《OMG》是韓國女子團體NewJeans的韓語單曲專輯，由ADOR企劃，YG PLUS發行，專輯於2023年1月2日推出，主打曲為〈OMG〉。
+                </p>
+                <br><a href="https://open.spotify.com/album/45ozep8uHHnj5CCittuyXj">
+                    <button>spotifys</button>
+                    </a>
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_kGx7BCyb1rmzKNpSDwSu6atiGRtZZb9nc">
+                    <button>YouTube music</button>
+                    </a>
+            </section>-->
+       
+            <footer>
+                Copyright © since 2023 Music Forever All Rights Reserved.<br>
+                您是第 個顧客
+            </footer>
+
+
+
+
+    
+
+</body>
+</html>

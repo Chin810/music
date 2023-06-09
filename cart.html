@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Forever|購物車</title>
+    <link rel="stylesheet" href="index copy.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="css/products1.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" href="image/logo.ico">
+    <script>
+        function updateSubtotal(index) {
+          var quantityInputs = document.getElementsByClassName("quantity-input");
+          var priceElements = document.getElementsByClassName("price");
+          var subtotalElements = document.getElementsByClassName("subtotal");
+    
+          var quantity = parseInt(quantityInputs[index].value);
+          var price = parseFloat(priceElements[index].innerText);
+    
+          var subtotal = quantity * price;
+          subtotalElements[index].innerText = subtotal.toFixed(2);
+    
+          updateTotal();
+        }
+    
+        function updateTotal() {
+          var subtotalElements = document.getElementsByClassName("subtotal");
+          var totalElement = document.getElementById("total");
+    
+          var total = 0;
+    
+          for (var i = 0; i < subtotalElements.length; i++) {
+            total += parseFloat(subtotalElements[i].innerText);
+          }
+    
+          totalElement.innerText = total.toFixed(2);
+        }
+      </script>
+</head>
+<header>
+    <div class="h-r">
+        <a href="index.html"><img class="logo" src="image/logo.ico"></a> 
+  
+    </div>
+        <div class="t-icon">
+            <div class="t-search">
+                <form class="searchForm">
+                    <input type="text" class="searchText" placeholder="Search">
+                    <button type="submit" class="searchIcon">
+                        <img src="image/search.png" width="24px">
+                    </button>
+                </form>
+            </div>
+            <div class="t-member">
+                <a href="login.html">
+                    <!--前往會員登入註冊頁-->
+                    <img src="image/user.png" width="26px" alt="會員">
+                </a>
+            </div>
+            <div class="t-cart">
+                <a href="cart.html">
+                    <!--前往購物車頁-->
+                    <img src="image/shopping-bag.png" width="40px" alt="購物車">
+                </a>
+            </div>
+        </div>
+    </div>
+  </header>
+<body>
+    <ul>
+        <li> <a href="products.html">All products</a></li>
+        <li> <a href="intro.html">Music Forever</a></li>
+        <li> <a href="about_us.html">about us</a></li>
+        <li> <a href="salescharts.html">sales charts</a></li>
+        <li style="float: right;"> <a href="information.html">member profile</a></li>
+    </ul>
+    <h1>購物車</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>商品</th>
+          <th>價格</th>
+          <th>數量</th>
+          <th>小計</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>商品</td>
+          <td class="price">10.00</td>
+          <td>
+            <input class="quantity-input" type="number" value="1" min="1" onchange="updateSubtotal(0)">
+          </td>
+          <td class="subtotal">10.00</td>
+        </tr>
+        <tr>
+          <td>商品</td>
+          <td class="price">15.00</td>
+          <td>
+            <input class="quantity-input" type="number" value="1" min="1" onchange="updateSubtotal(1)">
+          </td>
+          <td class="subtotal">15.00</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div id="total">總計: 25.00</div>
+  
+    <button id="checkout-btn">結算</button>
+    
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <h2>取貨方式</h2><br>
+                <label>
+                  <input type="radio" name="pickup" value="store" required>
+                  到店自取
+                </label>
+                <label>
+                  <input type="radio" name="pickup" value="delivery">
+                  送貨上門
+                </label><br>
+        
+                <h2>付款方式</h2>
+                <label>
+                  <input type="radio" name="payment" value="credit" required>
+                  信用卡付款
+                </label>
+                <label>
+                  <input type="radio" name="payment" value="bank">
+                  銀行轉帳
+                </label>
+                <label>
+                  <input type="radio" name="payment" value="cash">
+                  現金付款
+                </label>
+        
+                <input type="submit" value="提交訂單">
+              </form>
+        </div>
+        <div class="image-container">        
+          <div class="imgg1-box">
+          <img src="image/001.jpg" width="500"/>
+          <img src="image/002.jpg" width="500"/>
+          <img src="image/003.jpg" width="500"/>
+        </div>
+    </div>
+</body>
+</html>

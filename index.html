@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music forever</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="image/logo.ico">
+
+</head>
+<script src="header.html"></script>
+<header>
+  <div class="h-r">
+      <a href="index.html"><img class="logo" src="image/logo.ico"></a> 
+
+  </div>
+      <div class="t-icon">
+          <div class="t-search">
+              <form class="searchForm">
+                  <input type="text" class="searchText" placeholder="Search">
+                  <button type="submit" class="searchIcon">
+                      <img src="image/search.png" width="24px">
+                  </button>
+              </form>
+          </div>
+          <div class="t-member">
+               <a href="login.html">
+                  <!--前往會員登入註冊頁-->
+                  <img src="image/user.png" width="26px" alt="會員">
+              </a>
+          </div>
+          <div class="t-cart">
+              <a href="cart.html">
+                  <!--前往購物車頁-->
+                  <img src="image/shopping-bag.png" width="40px" alt="購物車">
+              </a>
+          </div>
+      </div>
+  </div>
+</header>
+<body>
+
+    <ul>
+        <li> <a href="products.html">All products</a></li>
+        
+        <li> <a href="intro.html">Music Forever</a></li>
+        <li> <a href="about_us.html">about us</a></li>
+        <li> <a href="salescharts.html">sales charts</a></li>
+        <li style="float: right;"> <a href="information.html">member profile</a></li>
+    </ul>
+    <div class="wrap">
+        <div class="banner">
+          <video autoplay muted loop>
+            <source src="image/774.mp4">
+          </video>
+          <h2>Music forever
+            
+          </h2>
+          <input type="button" value="連結名稱" onclick="location.href='要前往的網頁連結'">
+
+        </div>
+      </div>
+      <div class="tt_tittle">
+        商品快速瀏覽區
+      </div>
+      <div id="pic" style="OVERFLOW: hidden; width:1024" class="tt">
+        <table width="100%" border=0 cellpadding=0 bgcolor="" cellspace=0>
+        <tr>
+        <td id="pic1">
+        <table>
+        <tr>
+        <td><a rel="nofollow" href="products1.html" ><img src="image/product1.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="products2.html" ><img src="image/product2.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product3.html" ><img src="image/product3.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product4.html" ><img src="image/product4.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product5.html" ><img src="image/product5.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product6.html" ><img src="image/product6.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product7.html" ><img src="image/product7.jpg" height="150" border=0></td>
+        <td><a rel="nofollow" href="product8.html" ><img src="image/product8.jpg" height="150" border=0></td>
+            <td><a rel="nofollow" href="product9.html" ><img src="image/product9.jpg" height="150" border=0></td>
+        </tr>
+        </table>
+        </td>
+        <td id="pic2"></td>
+        </tr>
+        <script>
+            var speed=30
+            pic2.innerHTML=pic1.innerHTML
+            pic.scrollLeft=pic.scrollWidth
+            function Marquee(){
+            if(pic.scrollLeft<=0)
+            pic.scrollLeft+=pic2.offsetWidth
+            else{
+            pic.scrollLeft--
+            }
+            }
+            var MyMar=setInterval(Marquee,speed)
+            pic.onmouseover=function() {clearInterval(MyMar)}
+            pic.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+        </script>
+        </table>
+        </div>
+        <div class="tt_tittle">
+            人氣排行
+        </div>
+
+        <ul class="product1-list">
+            <li class="product1-item">
+            <p class="titlein">1</p>  
+            <a href="product7.html"><img src="image/product7.jpg" alt="Product 1"></a>
+              <h3 class="title">Me ——Jisoo</h3>
+              <p class="price">$29.99</p>
+              <a class="product1-button1" href="#">加入購物車</a>
+              <a class="product1-button2" href="cart.html">直接購買</a>
+            </li>
+            <li class="product1-item">
+                <p class="titlein">2</p>  
+                <a href="product3.html"><img src="image/product3.jpg" alt="Product 2"></a>
+                <h3 class="title">My Heart Will Go On ——Céline Dion</h3>
+                <p class="price">$19.99</p>
+                <a class="product1-button1" href="#">加入購物車</a>
+                <a class="product1-button2" href="cart.html">直接購買</a>
+            </li>
+            <li class="product1-item">
+                <p class="titlein">3</p>  
+                <a href="product8.html"><img src="image/product8.jpg" alt="Product 1"></a>
+              <h3 class="title">I've IVE ——Ive</h3>
+              <p class="price">$29.99</p>
+              <a class="product1-button1" href="#">加入購物車</a>
+              <a class="product1-button2" href="cart.html">直接購買</a>
+            </li>
+            <li class="product1-item">
+                <p class="titlein">4</p>  
+                <a href="products2.html"><img src="image/product2.jpg" alt="Product 1"></a>
+              <h3 class="title">Am I Easy To Forget ——Jim Reeves</h3>
+              <p class="price">$29.99</p>
+              <a class="product1-button1" href="#">加入購物車</a>
+              <a class="product1-button2" href="cart.html">直接購買</a>
+            </li>
+            <li class="product1-item">
+                <p class="titlein">5</p>  
+                <a href="product9.html"><img src="image/product9.jpg" alt="Product 1"></a>
+              <h3 class="title">OMG ——NewJeans</h3>
+              <p class="price">$29.99</p>
+              <a class="product1-button1" href="#">加入購物車</a>
+              <a class="product1-button2" href="cart.html">直接購買</a>
+            </li>
+        </ul>
+ 
+
+
+    <footer>
+        Copyright © since 2023 Music Forever All Rights Reserved.<br>
+        您是第 個顧客
+    </footer>
+</body>
+</html>
