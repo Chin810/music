@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: -2px auto;
+  font-family: "微軟正黑體";
+
+}
+
+body {
+  background: rgba(1, 0, 0, 0.863);
+  min-height: 100%;
+}
+
+header {
+  background: linear-gradient(to bottom, #424242 0%, #2a2828 40%, #100f0f 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+  text-align: left;
+  font-size: 25px;
+  color: white;
+  margin: 0px;
+  padding: 8px;
+  height: 100px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  color: #100b05;
+  background: linear-gradient(to bottom, #100f0f 0%, #2a2828 40%, #100f0f 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  object-fit: cover;
+}
+
+.titleup {
+
+  text-align: center;
+  font-size: 30px;
+
+  color: white;
+  padding: 50px;
+  color: transparent;
+  padding-left: auto;
+
+  -webkit-text-stroke: 0.5px #f0eae3;
+  font-size: 20px;
+
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  background: transparent;
+}
+
+.product-item {
+  width: 250px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid #c0baba;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-item .title {
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.product-item .price {
+  font-weight: bold;
+  color: #ee0707;
+  text-align: center;
+}
+
+.product-button1 {
+  text-align: center;
+  padding: 5px 5px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 3px;
+  float: left;
+
+}
+
+.product-button2 {
+  text-align: center;
+  padding: 5px 5px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 3px;
+  margin-right: 5px;
+  width: 60px;
+}

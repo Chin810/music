@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微軟正黑體";
+}
+
+body {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    min-height: 100vh;
+}
+
+.signup{
+
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+
+.form{
+    width: 700px;
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid ;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.signup_title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+
+    padding: 30px;
+    
+}
+
+.signup_box{
+    margin-bottom: 10px;
+    text-align: center;
+    
+    
+}
+
+.form label{
+    line-height: 2;
+    font-size: 16px;
+    color: rgb(21, 33, 85);
+    margin-bottom: 300px;
+    
+}
+
+.form input{
+    margin-top: 20px;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid rgb(152, 106, 106);
+
+    background-color: transparent;
+    
+   
+}
+
+.form .signup_btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin: 10px 100px;
+    text-align: center;
+    
+}
+
+.form .btn {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    border: none;
+    background-color:rgb(70, 69, 66);
+    width: 100px;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2px;
+
+}
+
+.btn:hover{
+    background-color: rgb(209, 172, 126);
+}
+.btn a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-animation {
+    width: 100px;
+    height: 100px;
+ 
+    animation: rotate 2s linear infinite;
+    position: absolute;
+  }
+
+  .pp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .pp{
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 8s linear infinite;
+  }
+  .pp1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .pp2 {
+    position: fixed;
+    top: 0;
+    left: 20px;
+
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .pp3 {
+    position: fixed;
+    top: 10;
+    left: 300px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .pp1{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 5s linear infinite;
+  }
+  .pp2{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 5s linear infinite;
+  }
+  .pp3{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 11s linear infinite;
+  }
+  .pp4 {
+    position: fixed;
+    top: 50;
+    left: 450px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .pp5{
+    position: fixed;
+    top: 100;
+    right: 90px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .pp6 {
+    position: fixed;
+    top: 10;
+    left: 80;
+    width: 100%;
+    height: 100%;
+
+    z-index: 9999;
+  }
+  .pp4{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 10s linear infinite;
+  }
+  .pp5{
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 16s linear infinite;
+  }
+  .pp6{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #160c0c;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: pp 20s linear infinite;
+  }
+
+  @keyframes pp{
+    0% {
+      transform: translateY(20%);
+      
+    }
+    50% {
+        transform: translateY(50vh);
+        
+      }
+      60% {
+        transform: translateY(60vh);
+      }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  .ipt-box input[type="Password"]::-ms-reveal,
+  .ipt-box input[type="Password"]::-ms-clear{
+    display: none;
+  }
+  .ipt-box .eye{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 15;
+  }
+  .ipt-box{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }

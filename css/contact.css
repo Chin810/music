@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: -2px auto;
+    font-family: "微軟正黑體";
+    
+}
+body {
+   background: rgb(184, 142, 142);
+    
+    height: 100vh;
+    
+}
+header {
+    background: linear-gradient(to bottom, #424242 0%, #2a2828 40%, #100f0f 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    height: 100px;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    color: #100b05;
+    background: linear-gradient(to bottom, #100f0f 0%, #2a2828 40%, #100f0f 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+}
+  
+
+.logo{
+    float: left;
+}
+li{
+    float: left;
+    color: #EAE0D5;
+    margin: 3px;
+    border-right:0.5px solid #c9c5c197;
+
+}
+li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #cec9c5;
+    
+}
+li :hover{
+    background-color: #ed6ea0;
+ 
+    padding: 0;
+}
+
+
+
+
+
+
+
+.t-icon {
+    display: flex;
+    float: right;
+}
+
+.t-search {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.searchForm {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #cec9c5;
+}
+
+.searchText {
+
+    font-size: medium;
+    width: 180px;
+    height: 43px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    background-color: transparent;
+
+
+    
+}
+
+.searchIcon {
+    padding: 0px 15px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.t-member {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.t-cart {
+    margin-top: 20px;
+    padding-right: 30px;
+}
+footer {
+   
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    float: flex;
+    width: 100%;
+    bottom:0%;
+    
+    
+}
+
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    margin-left: 50%;
+    
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  textarea {
+    width: 80%;
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #commentList {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  #commentList div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .commentForm{
+    width: 80%;
+    margin-left: 300px;
+    margin-top: 50px;
+  }

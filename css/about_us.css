@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: -2px auto;
+    font-family: "微軟正黑體";
+    
+}
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+header {
+    background: linear-gradient(to bottom, #424242 0%, #2a2828 40%, #100f0f 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    height: 100px;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    color: #100b05;
+    background: linear-gradient(to bottom, #100f0f 0%, #2a2828 40%, #100f0f 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+}
+
+.logo{
+    float: left;
+}
+li{
+    float: left;
+    color: #EAE0D5;
+    margin: 3px;
+    border-right:0.5px solid #c9c5c197;
+
+}
+li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #cec9c5;
+    
+}
+li :hover{
+    background-color: #ed6ea0;
+ 
+    padding: 0;
+}
+
+
+
+
+
+
+
+.t-icon {
+    display: flex;
+    float: right;
+}
+
+.t-search {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.searchForm {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #cec9c5;
+}
+
+.searchText {
+
+    font-size: medium;
+    width: 180px;
+    height: 43px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    background-color: transparent;
+
+
+    
+}
+
+.searchIcon {
+    padding: 0px 15px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.t-member {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.t-cart {
+    margin-top: 20px;
+    padding-right: 30px;
+}
+footer {
+   
+    color: white;
+    text-align: center;
+    position: absolute;
+
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    float: flex;
+    width: 100%;
+    
+}
+/*以上開始複製*/
+
+.item{
+    display: flex;
+    width: 80%;
+    margin: 16px 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+
+}
+.it-img{
+    width: 100%;
+
+}
+.it-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+h3{
+    margin-bottom: 10px;
+}
+.itm-tro{
+    color: rgb(9, 8, 8);
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.item .it-img:nth-child(odd){
+    margin-right: 30px;
+
+}
+.item .it-img:nth-child(even){
+    margin-left: 30px;
+}
+.conn{
+    margin-top: 50px;
+    margin-bottom: 30PX;
+    text-align: center;
+    color: transparent;
+    padding-left: auto;
+
+    -webkit-text-stroke:2px #14100c;
+    font-size: 48px;
+
+
+}

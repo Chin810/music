@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微軟正黑體";
+    box-sizing: border-box
+}
+
+body {
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+/* Style the tab */
+div.tab {
+    flex: 1;
+    float: left;
+    background-color: #020202;
+    width: 15%;
+    height: 550px;
+    margin: 50px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: rgb(44, 43, 43);
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: rgb(72, 72, 72);
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-left: none;
+    height: 550px;
+    margin-top: 50px;
+}
+
+
+.member_box {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.star {
+    color: gold;
+}
